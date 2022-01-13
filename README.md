@@ -4,6 +4,10 @@ Read the article...
 
 -   ["Rust on Apache NuttX OS"](https://lupyuen.github.io/articles/rust2)
 
+This is a Stub Library, the actual Rust code is at...
+
+-   [lupyuen/rust_test](https://github.com/lupyuen/rust_test)
+
 To add this repo to your NuttX project...
 
 ```bash
