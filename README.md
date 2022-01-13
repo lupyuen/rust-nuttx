@@ -8,6 +8,8 @@ This is a Stub Library, the actual Rust code is at...
 
 -   [lupyuen/rust_test](https://github.com/lupyuen/rust_test)
 
+# Install Library
+
 To add this repo to your NuttX project...
 
 ```bash
