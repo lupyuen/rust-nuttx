@@ -1,10 +1,14 @@
-# Rust Library for Apache NuttX OS
+# Rust Stub Library for Apache NuttX OS
 
-Read the article...
+Read the articles...
+
+-   ["Rust talks I2C on Apache NuttX RTOS"](https://lupyuen.github.io/articles/rusti2c)
 
 -   ["Rust on Apache NuttX OS"](https://lupyuen.github.io/articles/rust2)
 
 This is a Stub Library, the actual Rust code is at...
+
+-   [lupyuen/rust-i2c-nuttx](https://github.com/lupyuen/rust-i2c-nuttx)
 
 -   [lupyuen/rust_test](https://github.com/lupyuen/rust_test)
 
@@ -13,29 +17,24 @@ This is a Stub Library, the actual Rust code is at...
 To add this repo to your NuttX project...
 
 ```bash
-cd nuttx/nuttx/libs
+pushd nuttx/nuttx/libs
 git submodule add https://github.com/lupyuen/rust-nuttx librust
+popd
 ```
 
 Next update the Makefiles and Kconfig...
 
--   ["Update Makefiles and Kconfig"](https://lupyuen.github.io/articles/sx1262#update-makefiles-and-kconfig)
+-   [Kconfig](https://github.com/lupyuen/incubator-nuttx/blob/rust/Kconfig#L2014)
 
-    Change "__sx1262__" to "__rust__", preserve case
+-   [tools/Directories.mk](https://github.com/lupyuen/incubator-nuttx/blob/rust/tools/Directories.mk#L170-L174)
 
--   See the modified files:
+-   [tools/FlatLibs.mk](https://github.com/lupyuen/incubator-nuttx/blob/rust/tools/FlatLibs.mk#L159-L163)
 
-    -   [Kconfig](https://github.com/lupyuen/incubator-nuttx/blob/rust/Kconfig#L2014)
+-   [tools/KernelLibs.mk](https://github.com/lupyuen/incubator-nuttx/blob/rust/tools/KernelLibs.mk#L145-L149)
 
-    -   [tools/Directories.mk](https://github.com/lupyuen/incubator-nuttx/blob/rust/tools/Directories.mk#L170-L174)
+-   [tools/LibTargets.mk](https://github.com/lupyuen/incubator-nuttx/blob/rust/tools/LibTargets.mk#L229-L233)
 
-    -   [tools/FlatLibs.mk](https://github.com/lupyuen/incubator-nuttx/blob/rust/tools/FlatLibs.mk#L159-L163)
-
-    -   [tools/KernelLibs.mk](https://github.com/lupyuen/incubator-nuttx/blob/rust/tools/KernelLibs.mk#L145-L149)
-
-    -   [tools/LibTargets.mk](https://github.com/lupyuen/incubator-nuttx/blob/rust/tools/LibTargets.mk#L229-L233)
-
-    -   [tools/ProtectedLibs.mk](https://github.com/lupyuen/incubator-nuttx/blob/rust/tools/ProtectedLibs.mk#L159-L163)
+-   [tools/ProtectedLibs.mk](https://github.com/lupyuen/incubator-nuttx/blob/rust/tools/ProtectedLibs.mk#L159-L163)
 
 Then update the NuttX Build Config...
 
